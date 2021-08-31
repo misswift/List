@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Alamofire
+
 
 class ListTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -21,6 +23,7 @@ class ListTableViewController: UIViewController, UITableViewDelegate, UITableVie
     override func viewDidLoad() {
         super.viewDidLoad()
        createTable()
+//        getText()
        
     }
     
@@ -34,6 +37,8 @@ class ListTableViewController: UIViewController, UITableViewDelegate, UITableVie
         view.addSubview(tableView)
         
     }
+    
+
 
     // MARK: - Table view data source
 
