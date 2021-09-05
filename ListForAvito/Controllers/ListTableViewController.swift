@@ -52,7 +52,7 @@ class ListTableViewController: UIViewController, UITableViewDelegate, UITableVie
                 let listResult = try JSONDecoder().decode(List.self, from: data)
                 
                 
-                self.list = listResult.company.employees
+                self.list = listResult.company.employees.sorted(by: { $0.name < $1.name})
                 self.tableView.reloadData()
             } catch let decodeErr{
                 print ("Error Decode" , decodeErr)

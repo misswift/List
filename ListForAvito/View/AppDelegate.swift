@@ -18,6 +18,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         window?.rootViewController = ListTableViewController()
         
+        // Cache
+    
+
+        
         return true
     }
 
