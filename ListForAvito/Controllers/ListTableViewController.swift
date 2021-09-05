@@ -76,9 +76,8 @@ class ListTableViewController: UIViewController, UITableViewDelegate, UITableVie
         
         let list = self.list[indexPath.row]
         cell.textLabel?.text = "\(list.name)\n \(list.phoneNumber)\n \(list.skills)"
-        cell.textLabel?.font = UIFont.systemFont(ofSize: 15.0)
-        cell.textLabel?.sizeToFit()
         cell.textLabel?.numberOfLines = 0
+        cell.imageView?.image = UIImage(named: "iconphoto")
     
         
         return cell
