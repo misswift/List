@@ -11,20 +11,20 @@ import Alamofire
 
 class ListTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    let list = [
-        List( name : "Dan", phone_number : 222),
-        List( name : "Dan", phone_number : 222),
-    ]
+    
+    
+    var list = [
+        Employee(name: "name", phoneNumber: "phone", skills: ["skills"])]
     
     var tableView = UITableView()
     
     let cellId = "cellId"
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-       createTable()
+        createTable()
         getText()
-       
+        
     }
     
     func createTable(){
@@ -47,24 +47,40 @@ class ListTableViewController: UIViewController, UITableViewDelegate, UITableVie
             }
             
             guard let data = dataResponce.data else {return}
-            let listString = String(data: data, encoding: .utf8)
-            print(listString ?? "")
+            
+            do {
+                let listResult = try JSONDecoder().decode(List.self, from: data)
+                
+                
+                self.list = listResult.company.employees
+                self.tableView.reloadData()
+            } catch let decodeErr{
+                print ("Error Decode" , decodeErr)
+            }
+            
         }
     }
-
+    
+    
+    
     // MARK: - Table view data source
-
-  
+    
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return list.count
     }
-
+    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)
-
+        
         let list = self.list[indexPath.row]
-        cell.textLabel?.text = list.name
+        cell.textLabel?.text = "\(list.name)\n \(list.phoneNumber)\n \(list.skills)"
+        cell.textLabel?.font = UIFont.systemFont(ofSize: 15.0)
+        cell.textLabel?.sizeToFit()
+        cell.textLabel?.numberOfLines = 0
+    
+        
         return cell
     }
     
@@ -73,7 +89,7 @@ class ListTableViewController: UIViewController, UITableViewDelegate, UITableVie
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100.0
     }
-
-   
-
+    
+    
+    
 }

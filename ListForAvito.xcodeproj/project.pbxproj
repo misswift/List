@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -115,7 +115,6 @@
 				9FBF444AE408F6589E036D59 /* Pods-ListForAvito.debug.xcconfig */,
 				206F048B780E97FC0DCD0279 /* Pods-ListForAvito.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

@@ -7,47 +7,29 @@
 
 import UIKit
 
-struct List{
-    var name : String
-    var phone_number : Int
+
+struct List: Decodable {
+    let company: Company
+}
+
+// MARK: - Company
+struct Company: Decodable {
+    var name: String?
+    let employees: [Employee]
+}
+
+// MARK: - Employee
+struct Employee: Decodable {
+    let name, phoneNumber: String
+    let skills: [String]
+
+    enum CodingKeys: String, CodingKey {
+        case name
+        case phoneNumber = "phone_number"
+        case skills
+    }
 }
 
 
 
-//https://run.mocky.io/v3/1d1cb4ec-73db-4762-8c4b-0b8aa3cecd4c
 
-
-//{
-//    "company": {
-//        "name":"Avito",
-//    "employees": [{
-//            "name": "John",
-//            "phone_number": "769453",
-//            "skills": ["Swift", "iOS"]
-//        }, {
-//            "name": "Diego",
-//            "phone_number": "987924",
-//            "skills": ["Kotlin", "Android"]
-//        }, {
-//            "name": "Alfred",
-//            "phone_number": "452533",
-//            "skills": ["Objective-C", "Android", "Photoshop"]
-//        }, {
-//            "name": "John",
-//            "phone_number": "212456",
-//            "skills": ["Java", "Python"]
-//        }, {
-//            "name": "Mat",
-//            "phone_number": "778975",
-//            "skills": ["Android", "MovieMaker"]
-//        }, {
-//            "name": "Bob",
-//            "phone_number": "456468",
-//            "skills": ["Groovy", "Kotlin"]
-//        }, {
-//            "name": "Marty",
-//            "phone_number": "321789",
-//            "skills": ["Android", "PHP", "C#"]
-//        }]
-//    }
-//}
