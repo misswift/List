@@ -11,7 +11,7 @@ import Alamofire
 
 class ListTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    
+
     
     var list = [
         Employee(name: "name", phoneNumber: "phone", skills: ["skills"])]
@@ -34,6 +34,7 @@ class ListTableViewController: UIViewController, UITableViewDelegate, UITableVie
         tableView.dataSource = self
         tableView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
         
+
         view.addSubview(tableView)
         
     }
@@ -51,9 +52,11 @@ class ListTableViewController: UIViewController, UITableViewDelegate, UITableVie
             do {
                 let listResult = try JSONDecoder().decode(List.self, from: data)
                 
-                
-                self.list = listResult.company.employees.sorted(by: { $0.name < $1.name})
-                self.tableView.reloadData()
+                DispatchQueue.main.async {
+                    self.list = listResult.company.employees.sorted(by: { $0.name < $1.name})
+                    self.tableView.reloadData()
+                }
+              
             } catch let decodeErr{
                 print ("Error Decode" , decodeErr)
             }
