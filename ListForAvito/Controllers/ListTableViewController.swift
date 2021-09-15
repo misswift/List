@@ -11,7 +11,10 @@ import Alamofire
 
 class ListTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-
+    
+    
+    var listCache = NSCache<AnyObject, AnyObject>()
+    
     
     var list = [
         Employee(name: "name", phoneNumber: "phone", skills: ["skills"])]
@@ -34,34 +37,40 @@ class ListTableViewController: UIViewController, UITableViewDelegate, UITableVie
         tableView.dataSource = self
         tableView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
         
-
+        
         view.addSubview(tableView)
         
     }
     
     func getText(){
         let url = "https://run.mocky.io/v3/1d1cb4ec-73db-4762-8c4b-0b8aa3cecd4c"
-        AF.request(url).responseData { (dataResponce) in
-            if let err = dataResponce.error{
-                print("error dataResponce", err)
-                return
-            }
-            
-            guard let data = dataResponce.data else {return}
-            
-            do {
-                let listResult = try JSONDecoder().decode(List.self, from: data)
-                
-                DispatchQueue.main.async {
-                    self.list = listResult.company.employees.sorted(by: { $0.name < $1.name})
-                    self.tableView.reloadData()
-                }
-              
-            } catch let decodeErr{
-                print ("Error Decode" , decodeErr)
-            }
-            
+        if let cachedList = listCache.object(forKey: url as NSString) {
+           
         }
+        else {
+            AF.request(url).responseData { (dataResponce) in
+                if let err = dataResponce.error{
+                    print("error dataResponce", err)
+                    return
+                }
+                
+                
+                guard let data = dataResponce.data else {return}
+                
+                do {
+                    let listResult = try JSONDecoder().decode(List.self, from: data)
+                    
+                    DispatchQueue.main.async {
+                        self.list = listResult.company.employees.sorted(by: { $0.name < $1.name})
+                        listCache.setObject(list, forKey: cachedList)
+                        self.tableView.reloadData()
+                    }
+                    
+                } catch let decodeErr{
+                    print ("Error Decode" , decodeErr)
+                }
+              }
+            }
     }
     
     
@@ -81,7 +90,7 @@ class ListTableViewController: UIViewController, UITableViewDelegate, UITableVie
         cell.textLabel?.text = "\(list.name)\n \(list.phoneNumber)\n \(list.skills)"
         cell.textLabel?.numberOfLines = 0
         cell.imageView?.image = UIImage(named: "iconphoto")
-    
+        
         
         return cell
     }
