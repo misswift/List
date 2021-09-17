@@ -59,10 +59,10 @@ class ListTableViewController: UIViewController, UITableViewDelegate, UITableVie
                 
                 do {
                     let listResult = try JSONDecoder().decode(List.self, from: data)
-                    
+                    print (listResult)
                     DispatchQueue.main.async {
                         self.list = listResult.company.employees.sorted(by: { $0.name < $1.name})
-                        listCache.setObject(list, forKey: cachedList)
+                       // listCache.setObject(list, forKey: cachedList)
                         self.tableView.reloadData()
                     }
                     
@@ -87,7 +87,7 @@ class ListTableViewController: UIViewController, UITableViewDelegate, UITableVie
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)
         
         let list = self.list[indexPath.row]
-        cell.textLabel?.text = "\(list.name)\n \(list.phoneNumber)\n \(list.skills)"
+        cell.textLabel?.text = "\(list.name) \(list.phoneNumber)  \(list.skills[0])"
         cell.textLabel?.numberOfLines = 0
         cell.imageView?.image = UIImage(named: "iconphoto")
         
