@@ -13,6 +13,7 @@
 		137E067726D7D75400AD0D3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 137E067526D7D75400AD0D3F /* LaunchScreen.storyboard */; };
 		137E068326D7D92700AD0D3F /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137E068226D7D92700AD0D3F /* List.swift */; };
 		137E068826D7DCBC00AD0D3F /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137E068726D7DCBC00AD0D3F /* ListTableViewController.swift */; };
+		13DFD13726F61EB10027BF39 /* New.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DFD13626F61EB10027BF39 /* New.swift */; };
 		29B1044D4ACD184AEF312D4E /* Pods_ListForAvito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEA97D43C11988816C7B6A56 /* Pods_ListForAvito.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		137E067826D7D75400AD0D3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		137E068226D7D92700AD0D3F /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 		137E068726D7DCBC00AD0D3F /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
+		13DFD13626F61EB10027BF39 /* New.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = New.swift; sourceTree = "<group>"; };
 		206F048B780E97FC0DCD0279 /* Pods-ListForAvito.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListForAvito.release.xcconfig"; path = "Target Support Files/Pods-ListForAvito/Pods-ListForAvito.release.xcconfig"; sourceTree = "<group>"; };
 		9FBF444AE408F6589E036D59 /* Pods-ListForAvito.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListForAvito.debug.xcconfig"; path = "Target Support Files/Pods-ListForAvito/Pods-ListForAvito.debug.xcconfig"; sourceTree = "<group>"; };
 		AEA97D43C11988816C7B6A56 /* Pods_ListForAvito.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ListForAvito.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				137E068726D7DCBC00AD0D3F /* ListTableViewController.swift */,
+				13DFD13626F61EB10027BF39 /* New.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				137E068326D7D92700AD0D3F /* List.swift in Sources */,
+				13DFD13726F61EB10027BF39 /* New.swift in Sources */,
 				137E066B26D7D75300AD0D3F /* AppDelegate.swift in Sources */,
 				137E066D26D7D75300AD0D3F /* SceneDelegate.swift in Sources */,
 				137E068826D7DCBC00AD0D3F /* ListTableViewController.swift in Sources */,
@@ -300,7 +304,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -355,7 +359,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

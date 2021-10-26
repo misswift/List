@@ -21,7 +21,7 @@ struct Company: Decodable {
 // MARK: - Employee
 struct Employee: Decodable {
     let name, phoneNumber: String
-    let skills: [String]
+    let skills: [String]?
 
     enum CodingKeys: String, CodingKey {
         case name

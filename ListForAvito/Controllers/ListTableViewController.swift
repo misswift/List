@@ -17,9 +17,10 @@ class ListTableViewController: UIViewController, UITableViewDelegate, UITableVie
     
     
     var list = [
-        Employee(name: "name", phoneNumber: "phone", skills: ["skills"])]
+        Employee(name: "name", phoneNumber: "phone", skills: ["skills", "skills", "skills"])]
     
     var tableView = UITableView()
+    
     
     let cellId = "cellId"
     
@@ -59,9 +60,12 @@ class ListTableViewController: UIViewController, UITableViewDelegate, UITableVie
                 
                 do {
                     let listResult = try JSONDecoder().decode(List.self, from: data)
-                    print (listResult)
+                    //получаем json  идекодируем его
+                    //print (listResult)
                     DispatchQueue.main.async {
+                        // сортировка в алфавитном порядке полученных данных
                         self.list = listResult.company.employees.sorted(by: { $0.name < $1.name})
+                        
                        // listCache.setObject(list, forKey: cachedList)
                         self.tableView.reloadData()
                     }
@@ -85,12 +89,22 @@ class ListTableViewController: UIViewController, UITableViewDelegate, UITableVie
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)
-        
+        // выводим все данные в три строки
         let list = self.list[indexPath.row]
-        cell.textLabel?.text = "\(list.name) \(list.phoneNumber)  \(list.skills[0])"
+        //вывожу массив который возвращает каждый раз разное количество полей
+        guard  let skills = list.skills else {return cell}
+        cell.textLabel?.text = "\(list.name) ☎︎ \(list.phoneNumber) \n \(String(describing: skills.joined(separator:",")))"
+        cell.textLabel?.layer.shadowOffset = CGSize(width: 0, height: 5)
+        cell.textLabel?.layer.shadowOpacity = 20
+        cell.textLabel?.layer.shadowRadius = 5
+        cell.textLabel?.layer.shadowColor = UIColor.red.cgColor
+       // рамка и цвет рамки картинки... использовать анимации CALayer
         cell.textLabel?.numberOfLines = 0
         cell.imageView?.image = UIImage(named: "iconphoto")
-        
+        cell.imageView?.layer.cornerRadius = 50
+        cell.imageView?.layer.borderColor = UIColor.gray.cgColor
+        cell.imageView?.layer.masksToBounds = true
+        cell.imageView?.layer.borderWidth = 1        
         
         return cell
     }
