@@ -95,6 +95,7 @@ class ListTableViewController: UIViewController, UITableViewDelegate, UITableVie
         guard  let skills = list.skills else {return cell}
         cell.textLabel?.text = "\(list.name) ☎︎ \(list.phoneNumber) \n \(String(describing: skills.joined(separator:",")))"
         cell.textLabel?.layer.shadowOffset = CGSize(width: 0, height: 5)
+        //добавлена красная тень в метке
         cell.textLabel?.layer.shadowOpacity = 20
         cell.textLabel?.layer.shadowRadius = 5
         cell.textLabel?.layer.shadowColor = UIColor.red.cgColor
@@ -104,7 +105,8 @@ class ListTableViewController: UIViewController, UITableViewDelegate, UITableVie
         cell.imageView?.layer.cornerRadius = 50
         cell.imageView?.layer.borderColor = UIColor.gray.cgColor
         cell.imageView?.layer.masksToBounds = true
-        cell.imageView?.layer.borderWidth = 1        
+       // cell.imageView?.layer.borderWidth = 1
+        
         
         return cell
     }

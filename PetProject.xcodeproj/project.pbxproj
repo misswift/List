@@ -14,11 +14,11 @@
 		137E068326D7D92700AD0D3F /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137E068226D7D92700AD0D3F /* List.swift */; };
 		137E068826D7DCBC00AD0D3F /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137E068726D7DCBC00AD0D3F /* ListTableViewController.swift */; };
 		13DFD13726F61EB10027BF39 /* New.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DFD13626F61EB10027BF39 /* New.swift */; };
-		29B1044D4ACD184AEF312D4E /* Pods_ListForAvito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEA97D43C11988816C7B6A56 /* Pods_ListForAvito.framework */; };
+		ADCCA311213721ABD72A8036 /* Pods_PetProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AABF5AC54A0047C67AB0F8A /* Pods_PetProject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		137E066726D7D75300AD0D3F /* ListForAvito.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListForAvito.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		137E066726D7D75300AD0D3F /* PetProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		137E066A26D7D75300AD0D3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		137E066C26D7D75300AD0D3F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		137E067326D7D75400AD0D3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -28,8 +28,10 @@
 		137E068726D7DCBC00AD0D3F /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		13DFD13626F61EB10027BF39 /* New.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = New.swift; sourceTree = "<group>"; };
 		206F048B780E97FC0DCD0279 /* Pods-ListForAvito.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListForAvito.release.xcconfig"; path = "Target Support Files/Pods-ListForAvito/Pods-ListForAvito.release.xcconfig"; sourceTree = "<group>"; };
+		2864E4DE3347A1D6E476AF89 /* Pods-PetProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetProject.release.xcconfig"; path = "Target Support Files/Pods-PetProject/Pods-PetProject.release.xcconfig"; sourceTree = "<group>"; };
+		7AABF5AC54A0047C67AB0F8A /* Pods_PetProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PetProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FBF444AE408F6589E036D59 /* Pods-ListForAvito.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListForAvito.debug.xcconfig"; path = "Target Support Files/Pods-ListForAvito/Pods-ListForAvito.debug.xcconfig"; sourceTree = "<group>"; };
-		AEA97D43C11988816C7B6A56 /* Pods_ListForAvito.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ListForAvito.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD146A29EFD2A7AC2F416DC6 /* Pods-PetProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetProject.debug.xcconfig"; path = "Target Support Files/Pods-PetProject/Pods-PetProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29B1044D4ACD184AEF312D4E /* Pods_ListForAvito.framework in Frameworks */,
+				ADCCA311213721ABD72A8036 /* Pods_PetProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,7 +49,7 @@
 		137E065E26D7D75300AD0D3F = {
 			isa = PBXGroup;
 			children = (
-				137E066926D7D75300AD0D3F /* ListForAvito */,
+				137E066926D7D75300AD0D3F /* PetProject */,
 				137E066826D7D75300AD0D3F /* Products */,
 				4915B544E4F2FC87B8DE1850 /* Pods */,
 				15752C270B8010B8E1A4956A /* Frameworks */,
@@ -57,12 +59,12 @@
 		137E066826D7D75300AD0D3F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				137E066726D7D75300AD0D3F /* ListForAvito.app */,
+				137E066726D7D75300AD0D3F /* PetProject.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		137E066926D7D75300AD0D3F /* ListForAvito */ = {
+		137E066926D7D75300AD0D3F /* PetProject */ = {
 			isa = PBXGroup;
 			children = (
 				137E067F26D7D81D00AD0D3F /* Models */,
@@ -72,7 +74,7 @@
 				137E067526D7D75400AD0D3F /* LaunchScreen.storyboard */,
 				137E067826D7D75400AD0D3F /* Info.plist */,
 			);
-			path = ListForAvito;
+			path = PetProject;
 			sourceTree = "<group>";
 		};
 		137E067F26D7D81D00AD0D3F /* Models */ = {
@@ -104,7 +106,7 @@
 		15752C270B8010B8E1A4956A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AEA97D43C11988816C7B6A56 /* Pods_ListForAvito.framework */,
+				7AABF5AC54A0047C67AB0F8A /* Pods_PetProject.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -114,6 +116,8 @@
 			children = (
 				9FBF444AE408F6589E036D59 /* Pods-ListForAvito.debug.xcconfig */,
 				206F048B780E97FC0DCD0279 /* Pods-ListForAvito.release.xcconfig */,
+				AD146A29EFD2A7AC2F416DC6 /* Pods-PetProject.debug.xcconfig */,
+				2864E4DE3347A1D6E476AF89 /* Pods-PetProject.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -121,9 +125,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		137E066626D7D75300AD0D3F /* ListForAvito */ = {
+		137E066626D7D75300AD0D3F /* PetProject */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 137E067B26D7D75400AD0D3F /* Build configuration list for PBXNativeTarget "ListForAvito" */;
+			buildConfigurationList = 137E067B26D7D75400AD0D3F /* Build configuration list for PBXNativeTarget "PetProject" */;
 			buildPhases = (
 				BC80147EC649EE621369D475 /* [CP] Check Pods Manifest.lock */,
 				137E066326D7D75300AD0D3F /* Sources */,
@@ -135,9 +139,9 @@
 			);
 			dependencies = (
 			);
-			name = ListForAvito;
+			name = PetProject;
 			productName = ListForAvito;
-			productReference = 137E066726D7D75300AD0D3F /* ListForAvito.app */;
+			productReference = 137E066726D7D75300AD0D3F /* PetProject.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -154,7 +158,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 137E066226D7D75300AD0D3F /* Build configuration list for PBXProject "ListForAvito" */;
+			buildConfigurationList = 137E066226D7D75300AD0D3F /* Build configuration list for PBXProject "PetProject" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -167,7 +171,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				137E066626D7D75300AD0D3F /* ListForAvito */,
+				137E066626D7D75300AD0D3F /* PetProject */,
 			);
 		};
 /* End PBXProject section */
@@ -191,15 +195,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ListForAvito/Pods-ListForAvito-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-PetProject/Pods-PetProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ListForAvito/Pods-ListForAvito-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-PetProject/Pods-PetProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ListForAvito/Pods-ListForAvito-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PetProject/Pods-PetProject-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BC80147EC649EE621369D475 /* [CP] Check Pods Manifest.lock */ = {
@@ -217,7 +221,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ListForAvito-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-PetProject-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -371,12 +375,12 @@
 		};
 		137E067C26D7D75400AD0D3F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9FBF444AE408F6589E036D59 /* Pods-ListForAvito.debug.xcconfig */;
+			baseConfigurationReference = AD146A29EFD2A7AC2F416DC6 /* Pods-PetProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ListForAvito/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PetProject/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -390,12 +394,12 @@
 		};
 		137E067D26D7D75400AD0D3F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 206F048B780E97FC0DCD0279 /* Pods-ListForAvito.release.xcconfig */;
+			baseConfigurationReference = 2864E4DE3347A1D6E476AF89 /* Pods-PetProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ListForAvito/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PetProject/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -410,7 +414,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		137E066226D7D75300AD0D3F /* Build configuration list for PBXProject "ListForAvito" */ = {
+		137E066226D7D75300AD0D3F /* Build configuration list for PBXProject "PetProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				137E067926D7D75400AD0D3F /* Debug */,
@@ -419,7 +423,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		137E067B26D7D75400AD0D3F /* Build configuration list for PBXNativeTarget "ListForAvito" */ = {
+		137E067B26D7D75400AD0D3F /* Build configuration list for PBXNativeTarget "PetProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				137E067C26D7D75400AD0D3F /* Debug */,
