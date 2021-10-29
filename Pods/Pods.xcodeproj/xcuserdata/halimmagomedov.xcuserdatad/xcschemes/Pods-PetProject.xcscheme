@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1C45DFD2FB4CA3882B5C849E42AFEA6B"
-               BuildableName = "Pods_ListForAvito.framework"
-               BlueprintName = "Pods-ListForAvito"
+               BlueprintIdentifier = "FBF52AA3AD84EB792B464F4F88C927F2"
+               BuildableName = "Pods_PetProject.framework"
+               BlueprintName = "Pods-PetProject"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

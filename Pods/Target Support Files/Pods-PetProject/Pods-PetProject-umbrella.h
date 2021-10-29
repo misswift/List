@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_ListForAvitoVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_ListForAvitoVersionString[];
+FOUNDATION_EXPORT double Pods_PetProjectVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_PetProjectVersionString[];
 
