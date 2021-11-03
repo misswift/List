@@ -25,13 +25,13 @@ class AboutViewController: UIViewController, CAAnimationDelegate, UIViewControll
         button.layer.borderColor = #colorLiteral(red: 0.09019608051, green: 0, blue: 0.3019607961, alpha: 1)
         //округляем края кнопки
         button.layer.cornerRadius = button.frame.height/2
-        //добавляем сист картинку
-        button.setImage( UIImage(systemName: "plus"), for: .normal)
+        //добавляем сист картинку и меняем цвет системной картинки чтоб она не менялась при тапе
+        button.setImage( UIImage(systemName: "plus")?.withRenderingMode(.alwaysOriginal), for: .normal)
         //определяем положение сис картинки
         button.imageEdgeInsets = UIEdgeInsets(top: 25, left: 5, bottom: 25, right: 55)
-        //меняем цвет системной картинки
-        button.imageView?.tintColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        //растягиваем картинку
         button.imageView?.contentMode = .scaleAspectFill
+        //добавление действия перехода на следующую вью при нажатии на кнопку
         button.addTarget(self, action: #selector(tapped), for: .touchUpInside)
         
         return button
@@ -57,7 +57,7 @@ class AboutViewController: UIViewController, CAAnimationDelegate, UIViewControll
     //прописываем что произойдет по окончанию анимации
     func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
         let personDataVC = PersonData()
-        personDataVC.transitioningDelegate = AboutViewController()
+        //personDataVC.transitioningDelegate = AboutViewController()
         personDataVC.modalPresentationStyle = .custom
         present(personDataVC, animated: true, completion: nil)
         
