@@ -15,7 +15,7 @@ class ListTableViewController: UIViewController, UITableViewDelegate, UITableVie
     
     var listCache = NSCache<AnyObject, AnyObject>()
     
-    
+  
     var list = [
         Employee(name: "name", phoneNumber: "phone", skills: ["skills", "skills", "skills"])]
     
@@ -26,10 +26,12 @@ class ListTableViewController: UIViewController, UITableViewDelegate, UITableVie
     
     override func viewDidLoad() {
         super.viewDidLoad()
+   
         createTable()
         getText()
         
     }
+    
     
     func createTable(){
         self.tableView = UITableView(frame: view.bounds, style: .plain )
@@ -81,6 +83,12 @@ class ListTableViewController: UIViewController, UITableViewDelegate, UITableVie
     
     // MARK: - Table view data source
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath )  {
+//        let aboutController = AboutController()
+//        navigationController?.pushhview
+        
+    }
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return list.count
@@ -107,9 +115,10 @@ class ListTableViewController: UIViewController, UITableViewDelegate, UITableVie
         cell.imageView?.layer.masksToBounds = true
        // cell.imageView?.layer.borderWidth = 1
         
-        
         return cell
     }
+    
+    
     
     // MARK: - Table view delegate
     
