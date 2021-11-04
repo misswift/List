@@ -42,8 +42,8 @@ class AboutViewController: UIViewController, CAAnimationDelegate, UIViewControll
         let animation = CABasicAnimation(keyPath: "strokeEnd")
         //конечная точка анимации
         animation.toValue = 1
-        //анимация длится 2 секунды
-        animation.duration = 2
+        //анимация длится 1 секунды
+        animation.duration = 1
         
         animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeOut)
         animation.fillMode = CAMediaTimingFillMode.both

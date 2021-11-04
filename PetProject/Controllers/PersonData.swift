@@ -25,9 +25,12 @@ class PersonData: UIViewController, UITextViewDelegate {
         return button
     }()
     
+    let addNewChild = AddNewChild(frame: CGRect(x: 0, y: 200, width: 200, height: 200))
+    
     @objc func newChild (){
-        //let view = UIView()
+        self.view.addSubview(addNewChild)
     }
+    
     
     let notePlaceholder: UILabel = {
         let notePlaceholder = UILabel()
@@ -60,7 +63,8 @@ class PersonData: UIViewController, UITextViewDelegate {
         self.view.addSubview(textView)
        
         textView.addPlaceholder(notePlaceholder)
-    
+        
+        //newChild()
 
         //textView.text = "something in code"
        
