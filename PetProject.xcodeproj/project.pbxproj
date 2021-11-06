@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1315697127330AAF002DCDD6 /* AddNewChild.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1315697027330AAF002DCDD6 /* AddNewChild.swift */; };
+		1325EBB42736369E0033E647 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1325EBB32736369E0033E647 /* Extensions.swift */; };
 		137E066B26D7D75300AD0D3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137E066A26D7D75300AD0D3F /* AppDelegate.swift */; };
 		137E066D26D7D75300AD0D3F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137E066C26D7D75300AD0D3F /* SceneDelegate.swift */; };
 		137E067426D7D75400AD0D3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 137E067326D7D75400AD0D3F /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		1315697027330AAF002DCDD6 /* AddNewChild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewChild.swift; sourceTree = "<group>"; };
+		1325EBB32736369E0033E647 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		137E066726D7D75300AD0D3F /* PetProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		137E066A26D7D75300AD0D3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		137E066C26D7D75300AD0D3F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +52,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1325EBB127362F830033E647 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1325EBB32736369E0033E647 /* Extensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		137E065E26D7D75300AD0D3F = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +81,7 @@
 		137E066926D7D75300AD0D3F /* PetProject */ = {
 			isa = PBXGroup;
 			children = (
+				1325EBB127362F830033E647 /* Helpers */,
 				137E067F26D7D81D00AD0D3F /* Models */,
 				137E068126D7D83C00AD0D3F /* View */,
 				137E068026D7D82B00AD0D3F /* Controllers */,
@@ -94,8 +105,8 @@
 			children = (
 				137E068726D7DCBC00AD0D3F /* ListTableViewController.swift */,
 				13DFD13626F61EB10027BF39 /* AboutViewController.swift */,
-				13F2CE6D27311FE000471680 /* PersonData.swift */,
 				1315697027330AAF002DCDD6 /* AddNewChild.swift */,
+				13F2CE6D27311FE000471680 /* PersonData.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -244,6 +255,7 @@
 				13F2CE6E27311FE000471680 /* PersonData.swift in Sources */,
 				137E068326D7D92700AD0D3F /* List.swift in Sources */,
 				1315697127330AAF002DCDD6 /* AddNewChild.swift in Sources */,
+				1325EBB42736369E0033E647 /* Extensions.swift in Sources */,
 				13DFD13726F61EB10027BF39 /* AboutViewController.swift in Sources */,
 				137E066B26D7D75300AD0D3F /* AppDelegate.swift in Sources */,
 				137E066D26D7D75300AD0D3F /* SceneDelegate.swift in Sources */,

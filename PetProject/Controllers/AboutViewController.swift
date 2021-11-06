@@ -37,7 +37,6 @@ class AboutViewController: UIViewController, CAAnimationDelegate, UIViewControll
         return button
     }()
     
-    
     @objc func tapped(){
         let animation = CABasicAnimation(keyPath: "strokeEnd")
         //конечная точка анимации
@@ -54,6 +53,7 @@ class AboutViewController: UIViewController, CAAnimationDelegate, UIViewControll
         //добавляем анимацию на нашу фигуру
         overShapeLayer.add(animation, forKey: nil)
     }
+    
     //прописываем что произойдет по окончанию анимации
     func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
         let personDataVC = PersonData()

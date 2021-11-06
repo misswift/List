@@ -101,7 +101,8 @@ class ListTableViewController: UIViewController, UITableViewDelegate, UITableVie
         let list = self.list[indexPath.row]
         //вывожу массив который возвращает каждый раз разное количество полей
         guard  let skills = list.skills else {return cell}
-        cell.textLabel?.text = "\(list.name) ☎︎ \(list.phoneNumber) \n \(String(describing: skills.joined(separator:",")))"
+        //извлечение данных из полей
+        cell.textLabel?.text = "\(list.name) ☎︎ \(list.phoneNumber) \n \(String(describing: skills.joined(separator:",")))" // извлечение данных из опционального массива с разными полями
         cell.textLabel?.layer.shadowOffset = CGSize(width: 0, height: 5)
         //добавлена красная тень в метке
         cell.textLabel?.layer.shadowOpacity = 20
