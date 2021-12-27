@@ -11,8 +11,8 @@ import Alamofire
 
 class ListTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    
-    
+    let urlString = "https://run.mocky.io/v3/1d1cb4ec-73db-4762-8c4b-0b8aa3cecd4c"
+    var networkService = NetworkService()
     var listCache = NSCache<AnyObject, AnyObject>()
     
   
@@ -20,16 +20,13 @@ class ListTableViewController: UIViewController, UITableViewDelegate, UITableVie
         Employee(name: "name", phoneNumber: "phone", skills: ["skills", "skills", "skills"])]
     
     var tableView = UITableView()
-    
-    
     let cellId = "cellId"
     
     override func viewDidLoad() {
         super.viewDidLoad()
-   
+//        networkService.dataFetch(urlString: urlString)
         createTable()
-        getText()
-        
+        getText()        
     }
     
     
@@ -45,19 +42,15 @@ class ListTableViewController: UIViewController, UITableViewDelegate, UITableVie
         
     }
     
+//    if let cachedList = listCache.object(forKey: url as NSString) { }
+//    else {
+    
     func getText(){
-        let url = "https://run.mocky.io/v3/1d1cb4ec-73db-4762-8c4b-0b8aa3cecd4c"
-        if let cachedList = listCache.object(forKey: url as NSString) {
-           
-        }
-        else {
-            AF.request(url).responseData { (dataResponce) in
+            AF.request(urlString).responseData { (dataResponce) in
                 if let err = dataResponce.error{
                     print("error dataResponce", err)
                     return
                 }
-                
-                
                 guard let data = dataResponce.data else {return}
                 
                 do {
@@ -76,7 +69,7 @@ class ListTableViewController: UIViewController, UITableViewDelegate, UITableVie
                     print ("Error Decode" , decodeErr)
                 }
               }
-            }
+            
     }
     
     
@@ -126,7 +119,4 @@ class ListTableViewController: UIViewController, UITableViewDelegate, UITableVie
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100.0
     }
-    
-    
-    
 }

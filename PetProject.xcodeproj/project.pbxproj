@@ -9,12 +9,16 @@
 /* Begin PBXBuildFile section */
 		1315697127330AAF002DCDD6 /* AddNewChild.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1315697027330AAF002DCDD6 /* AddNewChild.swift */; };
 		1325EBB42736369E0033E647 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1325EBB32736369E0033E647 /* Extensions.swift */; };
+		134203F8273803970009268C /* Replicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134203F7273803970009268C /* Replicator.swift */; };
 		137E066B26D7D75300AD0D3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137E066A26D7D75300AD0D3F /* AppDelegate.swift */; };
 		137E066D26D7D75300AD0D3F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137E066C26D7D75300AD0D3F /* SceneDelegate.swift */; };
 		137E067426D7D75400AD0D3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 137E067326D7D75400AD0D3F /* Assets.xcassets */; };
 		137E067726D7D75400AD0D3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 137E067526D7D75400AD0D3F /* LaunchScreen.storyboard */; };
 		137E068326D7D92700AD0D3F /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137E068226D7D92700AD0D3F /* List.swift */; };
 		137E068826D7DCBC00AD0D3F /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137E068726D7DCBC00AD0D3F /* ListTableViewController.swift */; };
+		13D08D102738CF89001B2F5F /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D08D0F2738CF89001B2F5F /* NetworkDataFetcher.swift */; };
+		13D2DF9927377D8C00750507 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D2DF9827377D8C00750507 /* NetworkService.swift */; };
+		13D2DF9C2737842C00750507 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D2DF9B2737842C00750507 /* DataStore.swift */; };
 		13DFD13726F61EB10027BF39 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DFD13626F61EB10027BF39 /* AboutViewController.swift */; };
 		13F2CE6E27311FE000471680 /* PersonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F2CE6D27311FE000471680 /* PersonData.swift */; };
 		ADCCA311213721ABD72A8036 /* Pods_PetProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AABF5AC54A0047C67AB0F8A /* Pods_PetProject.framework */; };
@@ -23,6 +27,7 @@
 /* Begin PBXFileReference section */
 		1315697027330AAF002DCDD6 /* AddNewChild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewChild.swift; sourceTree = "<group>"; };
 		1325EBB32736369E0033E647 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		134203F7273803970009268C /* Replicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Replicator.swift; sourceTree = "<group>"; };
 		137E066726D7D75300AD0D3F /* PetProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		137E066A26D7D75300AD0D3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		137E066C26D7D75300AD0D3F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,6 +36,9 @@
 		137E067826D7D75400AD0D3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		137E068226D7D92700AD0D3F /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 		137E068726D7DCBC00AD0D3F /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
+		13D08D0F2738CF89001B2F5F /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
+		13D2DF9827377D8C00750507 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		13D2DF9B2737842C00750507 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		13DFD13626F61EB10027BF39 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		13F2CE6D27311FE000471680 /* PersonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonData.swift; sourceTree = "<group>"; };
 		206F048B780E97FC0DCD0279 /* Pods-ListForAvito.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListForAvito.release.xcconfig"; path = "Target Support Files/Pods-ListForAvito/Pods-ListForAvito.release.xcconfig"; sourceTree = "<group>"; };
@@ -60,6 +68,100 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		1325EBB8273661300033E647 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				1325EBBB2736614D0033E647 /* Model */,
+				1325EBBA273661450033E647 /* View */,
+				1325EBB92736613A0033E647 /* Controller */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		1325EBB92736613A0033E647 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				137E066A26D7D75300AD0D3F /* AppDelegate.swift */,
+				137E066C26D7D75300AD0D3F /* SceneDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1325EBBA273661450033E647 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				137E067526D7D75400AD0D3F /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1325EBBB2736614D0033E647 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1325EBBC273662190033E647 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				137E067F26D7D81D00AD0D3F /* Models */,
+				137E068126D7D83C00AD0D3F /* View */,
+				137E068026D7D82B00AD0D3F /* Controllers */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		1325EBBE273662340033E647 /* PersonData */ = {
+			isa = PBXGroup;
+			children = (
+				1325EBBF273662470033E647 /* View */,
+				1325EBC02736624F0033E647 /* Controller */,
+			);
+			path = PersonData;
+			sourceTree = "<group>";
+		};
+		1325EBBF273662470033E647 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1315697027330AAF002DCDD6 /* AddNewChild.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1325EBC02736624F0033E647 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				13F2CE6D27311FE000471680 /* PersonData.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1325EBC1273662A60033E647 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				1325EBC2273662B00033E647 /* Controller */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		1325EBC2273662B00033E647 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				13DFD13626F61EB10027BF39 /* AboutViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1325EBC3273663CD0033E647 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				137E067326D7D75400AD0D3F /* Assets.xcassets */,
+				137E067826D7D75400AD0D3F /* Info.plist */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
 		137E065E26D7D75300AD0D3F = {
 			isa = PBXGroup;
 			children = (
@@ -82,12 +184,13 @@
 			isa = PBXGroup;
 			children = (
 				1325EBB127362F830033E647 /* Helpers */,
-				137E067F26D7D81D00AD0D3F /* Models */,
-				137E068126D7D83C00AD0D3F /* View */,
-				137E068026D7D82B00AD0D3F /* Controllers */,
-				137E067326D7D75400AD0D3F /* Assets.xcassets */,
-				137E067526D7D75400AD0D3F /* LaunchScreen.storyboard */,
-				137E067826D7D75400AD0D3F /* Info.plist */,
+				1325EBB8273661300033E647 /* Application */,
+				1325EBBC273662190033E647 /* List */,
+				1325EBBE273662340033E647 /* PersonData */,
+				1325EBC1273662A60033E647 /* About */,
+				1325EBC3273663CD0033E647 /* Supporting files */,
+				13D08D122738D13F001B2F5F /* Services */,
+				13D2DF9B2737842C00750507 /* DataStore.swift */,
 			);
 			path = PetProject;
 			sourceTree = "<group>";
@@ -104,9 +207,6 @@
 			isa = PBXGroup;
 			children = (
 				137E068726D7DCBC00AD0D3F /* ListTableViewController.swift */,
-				13DFD13626F61EB10027BF39 /* AboutViewController.swift */,
-				1315697027330AAF002DCDD6 /* AddNewChild.swift */,
-				13F2CE6D27311FE000471680 /* PersonData.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -114,10 +214,18 @@
 		137E068126D7D83C00AD0D3F /* View */ = {
 			isa = PBXGroup;
 			children = (
-				137E066A26D7D75300AD0D3F /* AppDelegate.swift */,
-				137E066C26D7D75300AD0D3F /* SceneDelegate.swift */,
+				134203F7273803970009268C /* Replicator.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		13D08D122738D13F001B2F5F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				13D2DF9827377D8C00750507 /* NetworkService.swift */,
+				13D08D0F2738CF89001B2F5F /* NetworkDataFetcher.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		15752C270B8010B8E1A4956A /* Frameworks */ = {
@@ -252,10 +360,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13D08D102738CF89001B2F5F /* NetworkDataFetcher.swift in Sources */,
+				134203F8273803970009268C /* Replicator.swift in Sources */,
 				13F2CE6E27311FE000471680 /* PersonData.swift in Sources */,
 				137E068326D7D92700AD0D3F /* List.swift in Sources */,
 				1315697127330AAF002DCDD6 /* AddNewChild.swift in Sources */,
+				13D2DF9C2737842C00750507 /* DataStore.swift in Sources */,
 				1325EBB42736369E0033E647 /* Extensions.swift in Sources */,
+				13D2DF9927377D8C00750507 /* NetworkService.swift in Sources */,
 				13DFD13726F61EB10027BF39 /* AboutViewController.swift in Sources */,
 				137E066B26D7D75300AD0D3F /* AppDelegate.swift in Sources */,
 				137E066D26D7D75300AD0D3F /* SceneDelegate.swift in Sources */,
@@ -399,14 +511,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "$(SRCROOT)/PetProject/Info.plist";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/PetProject/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = wiasoft.ru.ListForAvito;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -418,14 +533,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "$(SRCROOT)/PetProject/Info.plist";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/PetProject/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = wiasoft.ru.ListForAvito;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

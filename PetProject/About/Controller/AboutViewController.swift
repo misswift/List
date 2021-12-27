@@ -9,22 +9,17 @@ import UIKit
 
 class AboutViewController: UIViewController, CAAnimationDelegate, UIViewControllerTransitioningDelegate {
     
+    let ai = Replicator(frame: CGRect(x: 100, y: 200, width: 10, height: 10))
+
+    
     lazy var button: UIButton! = {
-        let button = UIButton(type: .roundedRect)
+        let button = UIButton(cornerRadius: 50, title: "Внести данные", borderWidth: 1, borderColor: #colorLiteral(red: 0.09019608051, green: 0, blue: 0.3019607961, alpha: 1))
         //определяем размер кнопки и положение относительно фрейма вью
         button.frame = CGRect(x: 35 , y: 200, width: 320 , height: 80)
-        //задаем надпись на кнопке в нормльном состоянии
-        button.setTitle("Внести данные", for: .normal)
         // определяем цвет текста кнопки
         button.setTitleColor(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0), for: .normal)
         //определяем шрифт и размер шрифта
         button.titleLabel?.font = UIFont(name: "AppleSDGhoticNeo-Thin", size: 30)
-        //button.backgroundColor = #colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1)
-        //задаем цвет и ширину рамки
-        button.layer.borderWidth = 1
-        button.layer.borderColor = #colorLiteral(red: 0.09019608051, green: 0, blue: 0.3019607961, alpha: 1)
-        //округляем края кнопки
-        button.layer.cornerRadius = button.frame.height/2
         //добавляем сист картинку и меняем цвет системной картинки чтоб она не менялась при тапе
         button.setImage( UIImage(systemName: "plus")?.withRenderingMode(.alwaysOriginal), for: .normal)
         //определяем положение сис картинки
@@ -33,7 +28,6 @@ class AboutViewController: UIViewController, CAAnimationDelegate, UIViewControll
         button.imageView?.contentMode = .scaleAspectFill
         //добавление действия перехода на следующую вью при нажатии на кнопку
         button.addTarget(self, action: #selector(tapped), for: .touchUpInside)
-        
         return button
     }()
     
@@ -43,7 +37,6 @@ class AboutViewController: UIViewController, CAAnimationDelegate, UIViewControll
         animation.toValue = 1
         //анимация длится 1 секунды
         animation.duration = 1
-        
         animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeOut)
         animation.fillMode = CAMediaTimingFillMode.both
         // чтобы анимация не пропала после завершения
@@ -115,7 +108,9 @@ class AboutViewController: UIViewController, CAAnimationDelegate, UIViewControll
         // добавляем кнопку на вью
         self.view.addSubview(button)
         //nextButton()
-        
+        self.view.addSubview(ai)
+        ai.startAnimation(delay: 0.1, replicates: 30)
+
     }
     
     override func viewDidLayoutSubviews() {
